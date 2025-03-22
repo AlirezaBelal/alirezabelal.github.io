@@ -9,7 +9,7 @@ This website is built using the **Contrast** theme for Jekyll and is hosted on *
 To run this project on your local machine, follow these steps:
 
 ```sh
-git clone https://github.com/alirezabelal/contrast.git
+git clone https://github.com/alirezabelal/alirezabelal.github.git
 cd contrast
 bundle install
 bundle exec jekyll serve
