@@ -1,8 +1,3 @@
----
-layout: default
-title: "Home"
----
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,6 +13,11 @@ title: "Home"
     <link rel="stylesheet" href="assets_custom/css/style.css">
 
     <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
         .profile-img {
             width: 150px;
             height: 150px;
@@ -29,12 +29,21 @@ title: "Home"
         .contact-icons a {
             font-size: 1.5rem;
             margin-right: 15px;
-            color: #333;
+            color: white;
             transition: color 0.3s ease-in-out;
         }
 
         .contact-icons a:hover {
             color: #007bff;
+        }
+
+        .pro-s-cover h5, .pro-s-cover p {
+            text-align: center;
+        }
+
+        .contact-icons {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -49,7 +58,6 @@ title: "Home"
                     <h5>Alireza Belal</h5>
                     <p>AI Enthusiast</p>
                     <p>Backend Developer</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Tehran, Iran</p>
                     <div class="contact-icons">
                         <a href="https://github.com/AlirezaBelal" aria-label="GitHub Profile"><i
                                 class="fab fa-github"></i></a>
@@ -58,7 +66,7 @@ title: "Home"
                         <a href="https://www.linkedin.com/in/alirezabelal" aria-label="LinkedIn Profile"><i
                                 class="fab fa-linkedin-in"></i></a>
                         <a href="mailto:belal.alireza@gmail.com" aria-label="Email Profile">
-                            <i class="fab fa-email-in"></i>
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
