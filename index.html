@@ -1,110 +1,182 @@
----
-layout: default
-title: "Home"
----
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-          content="Alireza Belal's personal website showcasing academic background, research interests, and professional profiles.">
-    <meta name="google-site-verification" content="JPNsmDeuf2FnbrYZO3GD6O4-eI5Xh0Q0DhmQmArxtzQ"/>
-
-    <title>Alireza Belal | AI & Backend Development</title>
-
-    <link rel="shortcut icon" href="assets_custom/images/fav.jpg">
-    <link rel="stylesheet" href="assets_custom/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets_custom/css/fontawsom-all.min.css">
-    <link rel="stylesheet" href="assets_custom/css/style.css">
-
-    <style>
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .contact-icons a {
-            font-size: 1.5rem;
-            margin-right: 15px;
-            color: #333;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .contact-icons a:hover {
-            color: #007bff;
-        }
-
-        .pro-s-cover h5, .pro-s-cover p {
-            text-align: center;
-        }
-
-        .contact-icons {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alireza Belal — Backend & ML Engineer</title>
+  <meta name="description" content="Alireza Belal — Backend Engineer, Machine Learning Researcher, Data & Platform Engineering. Resume, publications and projects." />
+  <meta property="og:title" content="Alireza Belal — Backend & ML Engineer" />
+  <meta property="og:description" content="Resume, publications and projects of Alireza Belal (Backend & ML Engineer)." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="https://unpkg.com/neutralino/css/neutralino.min.css" />
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; line-height:1.5; padding:0; margin:0; }
+    header { background:#0b6ef6; color:#fff; padding:36px 18px; }
+    .container { max-width:980px; margin:0 auto; padding:28px 18px; }
+    nav a { color: #fff; margin-right:18px; text-decoration:none; font-weight:600; }
+    h1{ margin:0 0 8px 0; font-size:28px; }
+    h2{ margin-top:36px; color:#0b6ef6; }
+    .hero { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+    .contact { background:#f5f7fb; padding:12px; border-radius:8px; }
+    .links a { color:#0b6ef6; text-decoration:none; margin-right:12px; }
+    footer{ text-align:center; padding:24px 0; color:#666; font-size:14px; margin-top:48px; }
+    .btn { background:#0b6ef6; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; display:inline-block; }
+    @media (min-width:900px){
+      h1{font-size:34px;}
+    }
+    .section-intro { margin-bottom:12px; color:#333; }
+    .meta { font-size:14px; color:#444; }
+    .split { display:grid; grid-template-columns:1fr; gap:18px; }
+    @media(min-width:820px){ .split { grid-template-columns: 1fr 320px; } }
+    .card { background:#fff; border:1px solid #eef2f6; padding:16px; border-radius:8px; }
+    ul.project-list { padding-left:16px; margin:8px 0 18px 0; }
+    .small-muted { font-size:13px; color:#666; }
+  </style>
 </head>
-
 <body>
-<div class="container-fluid">
-    <div class="container profile-container">
-        <div class="row">
-            <aside id="menu-jk" class="col-md-4 text-center">
-                <div class="pro-s-cover">
-                    <img src="assets_custom/images/profile.jpg" alt="Alireza Belal" class="profile-img" loading="lazy">
-                    <h5>Alireza Belal</h5>
-                    <p>AI Enthusiast</p>
-                    <p>Backend Developer</p>
-                    <div class="contact-icons">
-                        <a href="https://github.com/AlirezaBelal" aria-label="GitHub Profile"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://scholar.google.com/citations?hl=fa&user=tCEI2JAAAAAJ"
-                           aria-label="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
-                        <a href="https://www.linkedin.com/in/alirezabelal" aria-label="LinkedIn Profile"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:belal.alireza@gmail.com" aria-label="Email Profile">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </aside>
-            <main class="col-md-8">
-                <div class="data-box">
-                    <h2>About Me</h2>
-                    <p align="justify">I am a backend developer with a deep passion for artificial intelligence. I hold
-                        a bachelor's degree in computer engineering and a master's degree in bioinformatics. My academic
-                        journey has equipped me with a strong foundation in both software development and data-driven
-                        problem-solving, allowing me to build scalable and efficient AI-powered systems.</p>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-                    <p align="justify">My expertise spans backend development, artificial intelligence, and machine
-                        learning applications. I am particularly interested in natural language processing, computer
-                        vision, recommender systems, and generative AI. By leveraging my knowledge in these areas, I aim
-                        to develop intelligent and adaptive software solutions that can address real-world
-                        challenges.</p>
-
-                    <p align="justify">Throughout my career, I have worked on designing and optimizing backend
-                        infrastructures, integrating AI models into production environments, and enhancing system
-                        performance through data-driven approaches. I am passionate about the intersection of data,
-                        algorithms, and real-world applications, and I continuously seek opportunities to apply AI in
-                        innovative ways.</p>
-
-                    <p align="justify">Beyond my technical interests, I am committed to continuous learning and
-                        collaboration within the AI and software engineering communities. Whether through research,
-                        development, or mentorship, I strive to contribute to the advancement of AI-driven
-                        technologies.</p>
-                </div>
-            </main>
+      <div style="margin-top:20px" class="hero">
+        <div>
+          <h1>Alireza Belal</h1>
+          <div class="meta">Senior Backend & Machine Learning Engineer — Backend Systems • ML Research • Data Engineering</div>
         </div>
+        <div style="margin-left:auto" class="contact card">
+          <div><strong>Contact</strong></div>
+          <div class="small-muted">Phone: +98 912 061 6878</div>
+          <div class="small-muted">Email: <a href="mailto:belal.alireza@gmail.com">belal.alireza@gmail.com</a></div>
+          <div style="margin-top:8px">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn" href="resume.md" style="background:#222; margin-left:8px">Download Resume (MD)</a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </header>
 
-<script src="assets_custom/js/jquery-3.2.1.min.js"></script>
-<script src="assets_custom/js/popper.min.js"></script>
-<script src="assets_custom/js/bootstrap.min.js"></script>
-<script src="assets_custom/js/jquery-scrolltofixed-min.js"></script>
-<script src="assets_custom/js/script.js"></script>
+  <main class="container" role="main">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="split">
+        <div>
+          <p class="section-intro">I am a systems-minded engineer working at the intersection of backend engineering, data infrastructure, and applied machine learning. Over the last several years I have designed, built, and operated production services, data platforms, and ML systems that go from raw signals to reliable product features. I enjoy turning complex research prototypes into robust, maintainable production software and I focus on measurable product impact and operational reliability.</p>
+
+          <h3>Professional approach</h3>
+          <p>I take a product-first engineering approach: I prefer simple, observable designs that make iteration and troubleshooting fast. I emphasize automated testing, CI/CD, monitoring, and modular architecture so models and services remain maintainable as they scale. My typical work blends software engineering discipline (APIs, service architecture, DB design) with ML best practices (reproducible pipelines, careful validation, and model deployment patterns).</p>
+
+          <h3>Experience highlights</h3>
+          <ul>
+            <li>Built high-throughput backend systems for ad tracking and attribution at WiseTrack.</li>
+            <li>Conducted ML research in biological sequence modeling at Sharif University and combined deep feature extractors with ensemble predictors for interaction prediction.</li>
+            <li>Led a multi-person engineering team to design and ship a multi-vendor marketplace (AVLIsland).</li>
+            <li>Delivered production web platforms and training infrastructure for educational bootcamps.</li>
+          </ul>
+
+          <h3>Interests & focus areas</h3>
+          <p>Distributed systems, reliable data pipelines, model serving at scale, ML for healthcare & bioinformatics, real-time analytics, and building engineering teams and practices that enable safe, repeatable delivery of ML-enabled features.</p>
+        </div>
+
+        <aside class="card">
+          <div><strong>Quick facts</strong></div>
+          <ul style="margin:8px 0;padding-left:14px">
+            <li>Languages: Python, PHP</li>
+            <li>Frameworks: FastAPI, Laravel, TensorFlow/PyTorch</li>
+            <li>DB: MySQL, PostgreSQL, ClickHouse (analytics)</li>
+            <li>Tools: Docker, Git, CI/CD, monitoring & logging</li>
+          </ul>
+          <div style="margin-top:10px">
+            <strong>Online</strong>
+            <div class="links" style="margin-top:6px">
+              <a href="https://github.com/AlirezaBelal" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/alirezabelal" target="_blank">LinkedIn</a>
+              <a href="resume.md">Resume (MD)</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="card">
+        <p class="small-muted">Full resume is available below — you can also download the Markdown file or request a PDF version.</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="resume.md">Open Resume (MD)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <p class="section-intro">Selected projects highlight production systems, ML research and applied work combining the two disciplines.</p>
+
+        <h3>Drug–Protein Interaction Prediction — Research Project</h3>
+        <p class="small-muted">Sharif University research project</p>
+        <ul class="project-list">
+          <li>Developed deep feature extractors for biological sequences and combined them with gradient-boosting regression to predict interaction affinity.</li>
+          <li>Built reproducible training pipelines and evaluation workflows with careful baseline comparisons to validate improvements.</li>
+        </ul>
+
+        <h3>Automated Triangular Arbitrage Bot</h3>
+        <p class="small-muted">Personal / Trading research</p>
+        <ul class="project-list">
+          <li>Designed a low-latency orderbook ingestion, matching, and execution system for cross-market arbitrage strategies, with error-handling and monitoring for real deployments.</li>
+        </ul>
+
+        <h3>Full-Stack Marketplace Platform</h3>
+        <p class="small-muted">AVLIsland — Multi-vendor marketplace</p>
+        <ul class="project-list">
+          <li>Led backend architecture, inventory & order orchestration, and CI/CD practices to increase release velocity for a production commerce product.</li>
+        </ul>
+
+        <div style="margin-top:10px" class="small-muted">More projects and code samples available on request or in public GitHub repositories.</div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="card">
+        <p class="section-intro">Selected peer-reviewed and conference publications. Full list and PDFs are available on request.</p>
+
+        <h4>Brain Tumor Detection and Classification in MRI Images Using Fuzzy Convolutional Deep Learning Neural Network</h4>
+        <div class="small-muted">Jul 13, 2024 — conference / peer-reviewed</div>
+        <p>Lead author: developed a fuzzy convolutional approach for tumor detection and classification in MRI; designed experiments, training pipelines and evaluation metrics.</p>
+
+        <h4>Survey on IoT‑based Waste Management Systems</h4>
+        <div class="small-muted">IEEE — Jul 3, 2022</div>
+        <p>Co-authored a systematic survey of IoT architectures and practical deployments for urban waste management; synthesized common patterns and open challenges for future work.</p>
+
+        <h4>Smart Home Automation Systems and Technologies Based On the Internet of Things</h4>
+        <div class="small-muted">ITCT — Nov 1, 2020</div>
+        <p>Conference proceedings co-author: contributed to the system design overview and technology comparisons for smart-home IoT solutions.</p>
+
+        <div style="margin-top:10px" class="small-muted">Publications and research artifacts can be shared directly upon request.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="small-muted">Feel free to reach out for collaboration, roles, or research questions.</p>
+        <p><strong>Phone:</strong> +98 912 061 6878</p>
+        <p><strong>Email:</strong> <a href="mailto:belal.alireza@gmail.com">belal.alireza@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alirezabelal" target="_blank">linkedin.com/in/alirezabelal</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/AlirezaBelal" target="_blank">github.com/AlirezaBelal</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© Alireza Belal — Backend & ML Engineer</div>
+    </footer>
+  </main>
 </body>
+</html>
