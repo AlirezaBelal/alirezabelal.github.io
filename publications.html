@@ -3,52 +3,123 @@ layout: page
 title: "Publications"
 ---
 
-<section id="publications" class="container">
-  <div class="card">
-    <h2>Selected Publications</h2>
-    <p class="section-intro">Selected peer-reviewed and conference publications. Full list, PDFs and citation entries are available on request.</p>
+<!-- publications.html -->
+<section id="publications" class="container" aria-labelledby="pubs-heading" style="padding:28px 18px;">
+  <style>
+    /* Scoped styles for publications section (paste into your global stylesheet if preferred) */
+    #publications .card { background:#fff; border:1px solid #e6eef6; border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(9,30,66,0.04); }
+    #publications h2 { color:#0b6ef6; margin:0 0 12px; font-size:28px; }
+    #publications .pub-item { display:grid; grid-template-columns: 1fr auto; gap:12px; align-items:start; padding:14px 0; border-bottom:1px solid #f1f6fb; }
+    #publications .pub-item:last-of-type { border-bottom:0; }
+    #publications h3 { margin:0 0 6px 0; font-size:18px; }
+    #publications .meta { font-size:13px; color:#586069; margin-bottom:8px; }
+    #publications .abstract { color:#333; margin:0 0 8px 0; }
+    #publications .links { display:flex; gap:8px; align-items:center; }
+    #publications a.btn { display:inline-block; padding:8px 10px; border-radius:8px; background:#0b6ef6; color:#fff; text-decoration:none; font-size:13px; }
+    #publications a.outline { background:transparent; color:#0b6ef6; border:1px solid #dbeeff; padding:6px 10px; border-radius:8px; text-decoration:none; }
+    #publications pre.bib { display:none; background:#0f1724; color:#e6eef6; padding:12px; border-radius:8px; overflow:auto; font-size:13px; }
+    @media(max-width:820px){
+      #publications .pub-item { grid-template-columns: 1fr; }
+      #publications .links { margin-top:8px; }
+    }
+  </style>
 
-    <!-- 1 -->
-    <article class="publication" id="pub-waste-iot">
-      <h3>Survey on IoT-based Waste Management Systems</h3>
-      <div class="small-muted">A. Younesi, H. S. Fard, A. B. Yengikand, V. Pezeshki — 2022</div>
-      <p>Conference paper. Systematic survey of IoT architectures and deployments applied to urban waste management; synthesizes common patterns, challenges, and a taxonomy for future research.</p>
-      <p class="small-muted">
-        Publisher: IEEE — 2022 8th International Conference on Web Research (ICWR), Tehran<br/>
-        DOI / Publisher page:
-        <a href="https://doi.org/10.1109/ICWR54782.2022.9786239" target="_blank" rel="noopener">https://doi.org/10.1109/ICWR54782.2022.9786239</a>
-        — <a href="https://ieeexplore.ieee.org/document/9786239" target="_blank" rel="noopener">IEEE Xplore (Document 9786239)</a>
-      </p>
+  <div class="card" role="region" aria-label="Selected Publications">
+    <h2 id="pubs-heading">Selected Publications</h2>
+    <p class="section-intro" style="margin-top:6px;color:#374151;">Selected peer-reviewed and conference publications. Full list, PDFs, and citation entries are available on request.</p>
+
+    <!-- Publication 1 -->
+    <article class="pub-item" id="pub-waste-iot">
+      <div>
+        <h3>Survey on IoT‑based Waste Management Systems</h3>
+        <div class="meta">A. Younesi, H. S. Fard, A. B. Yengikand, V. Pezeshki — 2022 — 8th International Conference on Web Research (ICWR), Tehran</div>
+        <p class="abstract">Conference paper. A systematic survey of IoT architectures and deployments applied to urban waste management; synthesizes common patterns, challenges, and a taxonomy for future research.</p>
+        <div class="links" aria-hidden="false">
+          <a class="btn" href="https://doi.org/10.1109/ICWR54782.2022.9786239" target="_blank" rel="noopener">View DOI</a>
+          <a class="outline" href="https://ieeexplore.ieee.org/document/9786239" target="_blank" rel="noopener">IEEE Xplore</a>
+          <button class="outline" onclick="toggleBib('bib-waste')">Show BibTeX</button>
+        </div>
+
+        <pre id="bib-waste" class="bib" data-bibtex>
+@inproceedings{younesi2022survey,
+  author = {Younesi, A. and Fard, H. S. and Yengikand, A. B. and Pezeshki, V.},
+  title = {Survey on IoT-based Waste Management Systems},
+  booktitle = {2022 8th International Conference on Web Research (ICWR)},
+  year = {2022},
+  pages = {162-167},
+  doi = {10.1109/ICWR54782.2022.9786239}
+}
+        </pre>
+      </div>
+      <div style="justify-self:end">
+        <div style="text-align:right; font-size:13px; color:#6b7280;">DOI</div>
+        <div style="text-align:right; margin-top:6px;"><a href="https://doi.org/10.1109/ICWR54782.2022.9786239" target="_blank" rel="noopener" class="btn">10.1109/ICWR54782.2022.9786239</a></div>
+      </div>
     </article>
 
-    <hr/>
+    <!-- Publication 2 -->
+    <article class="pub-item" id="pub-brain-tumor">
+      <div>
+        <h3>Brain Tumor Detection and Classification in MRI Images Using Fuzzy Convolutional Deep Learning Neural Network</h3>
+        <div class="meta">A. B. Yengikand, N. Abromand, et al. — 2024 — Conference Proceedings (Civilica)</div>
+        <p class="abstract">Conference paper. Lead author on a fuzzy-convolutional approach for MRI tumor detection and classification; work covered model architecture, training pipelines, and evaluation. Entry available on Civilica.</p>
+        <div class="links">
+          <a class="btn" href="https://civilica.com/doc/2027792" target="_blank" rel="noopener">View Entry</a>
+          <button class="outline" onclick="toggleBib('bib-brain')">Show BibTeX</button>
+        </div>
 
-    <!-- 2 -->
-    <article class="publication" id="pub-brain-tumor">
-      <h3>Brain Tumor Detection and Classification in MRI Images Using Fuzzy Convolutional Deep Learning Neural Network</h3>
-      <div class="small-muted">A. Belal Yengikand, N. Abromand, et al. — 2024</div>
-      <p>Conference paper. Lead author on a fuzzy-convolutional approach for MRI tumor detection and classification; work covered model architecture, training pipelines, and evaluation. Conference entry is available on Civilica.</p>
-      <p class="small-muted">
-        Conference / Publisher page:
-        <a href="https://civilica.com/doc/2027792" target="_blank" rel="noopener">Civilica — Document</a>
-      </p>
+        <pre id="bib-brain" class="bib" data-bibtex>
+@inproceedings{yengikand2024brain,
+  author = {Belal Yengikand, A. and Abromand, N. and others},
+  title = {Brain Tumor Detection and Classification in MRI Images Using Fuzzy Convolutional Deep Learning Neural Network},
+  booktitle = {Conference proceedings},
+  year = {2024},
+  url = {https://civilica.com/doc/2027792}
+}
+        </pre>
+      </div>
+      <div style="justify-self:end">
+        <div style="text-align:right; font-size:13px; color:#6b7280;">Publisher</div>
+        <div style="text-align:right; margin-top:6px;"><a href="https://civilica.com/doc/2027792" target="_blank" rel="noopener" class="outline">Civilica entry</a></div>
+      </div>
     </article>
 
-    <hr/>
+    <!-- Publication 3 -->
+    <article class="pub-item" id="pub-smart-home">
+      <div>
+        <h3>Smart Home Automation Systems and Technologies Based On the Internet of Things</h3>
+        <div class="meta">H. S. Fard, A. B. Yengikand, E. Niknami, J. Allahyari — 2020</div>
+        <p class="abstract">Survey / conference paper. Overview and comparison of smart-home automation architectures and enabling technologies, with discussion of IoT integration patterns and practical considerations.</p>
+        <div class="links">
+          <a class="btn" href="https://www.researchgate.net/publication/349705262_Smart_Home_Automation_Systems_and_Technologies_Based_On_the_Internet_of_Things" target="_blank" rel="noopener">View</a>
+          <button class="outline" onclick="toggleBib('bib-smart')">Show BibTeX</button>
+        </div>
 
-    <!-- 3 -->
-    <article class="publication" id="pub-smart-home">
-      <h3>Smart Home Automation Systems and Technologies Based On the Internet of Things</h3>
-      <div class="small-muted">H. S. Fard, A. B. Yengikand, E. Niknami, J. Allahyari — 2020</div>
-      <p>Survey / conference paper. Overview and comparison of smart-home automation architectures and enabling technologies, with discussion of IoT integration patterns, implementation notes, and practical considerations.</p>
-      <p class="small-muted">
-        Conference / Publisher page:
-        <a href="https://www.researchgate.net/publication/349705262_Smart_Home_Automation_Systems_and_Technologies_Based_On_the_Internet_of_Things" target="_blank" rel="noopener">ResearchGate — publication page</a>
-      </p>
+        <pre id="bib-smart" class="bib" data-bibtex>
+@incollection{fard2020smart,
+  author = {Fard, H. S. and Belal Yengikand, A. and Niknami, E. and Allahyari, J.},
+  title = {Smart Home Automation Systems and Technologies Based On the Internet of Things},
+  year = {2020},
+  url = {https://www.researchgate.net/publication/349705262_Smart_Home_Automation_Systems_and_Technologies_Based_On_the_Internet_of_Things}
+}
+        </pre>
+      </div>
+      <div style="justify-self:end">
+        <div style="text-align:right; font-size:13px; color:#6b7280;">Link</div>
+        <div style="text-align:right; margin-top:6px;"><a href="https://www.researchgate.net/publication/349705262_Smart_Home_Automation_Systems_and_Technologies_Based_On_the_Internet_of_Things" target="_blank" rel="noopener" class="outline">ResearchGate</a></div>
+      </div>
     </article>
 
-    <div style="margin-top:12px" class="small-muted">
-      Notes: DOI and publisher links were added where available. If you want BibTeX entries or PDFs linked on the site, paste the DOI/URLs or the PDF files here and I will update the HTML accordingly.
+    <div style="margin-top:14px; color:#6b7280; font-size:13px;">
+      Full publication list, PDFs, and BibTeX entries are available on request. If you want these BibTeX blocks exported as .bib or the PDFs hosted on the site, I can add them to the feature branch.
     </div>
   </div>
+
+  <script>
+    function toggleBib(id){
+      var el = document.getElementById(id);
+      if(!el) return;
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </section>
