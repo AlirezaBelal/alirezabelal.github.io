@@ -28,7 +28,6 @@ bundle exec jekyll serve
 
 Notes:
 - If you use a different workflow (e.g., a static index.html served directly), you can simply open `index.html` in a browser for a quick preview.
-- If you run the Jekyll server and do not see the updated branch content, ensure you have checked out `site-update-resume-publications` locally.
 
 ## Contact / Repo owner
 - GitHub: https://github.com/AlirezaBelal  

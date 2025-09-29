@@ -12,13 +12,6 @@ title: "Home"
     <meta name="description" content="Alireza Belal's personal website showcasing academic background, research interests, and professional profiles.">
     <link rel="shortcut icon" href="assets_custom/images/fav.jpg">
     <style>
-        body {
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            background: #fafbfc;
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -26,6 +19,19 @@ title: "Home"
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             padding: 2em 2em 1em 2em;
+        }
+        .two-column {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .left-column {
+            flex: 1;
+            padding-right: 1em;
+        }
+        .right-column {
+            flex: 2;
+            padding-left: 1em;
         }
         .profile-img {
             width: 120px;
@@ -93,28 +99,35 @@ title: "Home"
     <link rel="stylesheet" href="assets_custom/css/fontawsom-all.min.css">
 </head>
 <body>
-    <div class="container">
-        <img src="assets_custom/images/profile.jpg" alt="Alireza Belal" class="profile-img" loading="lazy">
-        <h1>Alireza Belal</h1>
-        <div class="subtitle">Software Engineer</div>
-        <div class="contact-icons">
-            <a href="https://github.com/AlirezaBelal" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://scholar.google.com/citations?hl=fa&user=tCEI2JAAAAAJ" aria-label="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
-            <a href="https://www.linkedin.com/in/alirezabelal" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:belal.alireza@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <div class="container two-column">
+        <div class="left-column">
+            <img src="assets_custom/images/profile.jpg" alt="Profile" class="profile-img" loading="lazy">
+            <h1>Software Engineer</h1>
+            <div class="subtitle">Product Management & AI</div>
+            <div class="contact-icons">
+                <a href="https://github.com/AlirezaBelal"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?hl=fa&user=tCEI2JAAAAAJ"><i class="fa fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/alirezabelal"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:belal.alireza@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="links-box">
+                <a href="projects">Projects</a>
+                <a href="publications">Publications</a>
+            </div>
         </div>
-        <div class="data-box">
-            <h2>About Me</h2>
-            <p>Product management experience is combined with a strong technical background in backend development and artificial intelligence. More than five years of work in backend engineering includes building scalable APIs, data pipelines, and integrating machine learning models into production systems for FinTech, AdTech, Healthcare, and E-commerce sectors.</p>
-            <p>Transitioning from software engineering to product management enables effective collaboration between technical teams and business objectives. Close cooperation with developers, designers, and stakeholders ensures delivery of products that are technically robust and aligned with user needs.</p>
-            <p>Expertise includes Python, distributed systems, and machine learning deployment, with a current focus on product strategy, roadmap planning, and cross-functional teamwork. Engineering experience is leveraged to drive product decisions, optimize workflows, and ensure measurable business impact.</p>
-            <p>For details on technical projects, see the <a href="projects">Projects</a> page. For research and publications, visit the <a href="publications">Publications</a> page.</p>
-        </div>
-        <div class="links-box">
-            <a href="projects">Projects</a>
-            <a href="publications">Publications</a>
+        <div class="right-column">
+            <div class="data-box">
+                <h2>About Me</h2>
+                <p>Product management experience is combined with a strong technical background in backend development and artificial intelligence. More than five years of work in backend engineering includes building scalable APIs, data pipelines, and integrating machine learning models into production systems for FinTech, AdTech, Healthcare, and E-commerce sectors.</p>
+                <p>Transitioning from software engineering to product management enables effective collaboration between technical teams and business objectives. Close cooperation with developers, designers, and stakeholders ensures delivery of products that are technically robust and aligned with user needs.</p>
+                <p>Expertise includes Python, distributed systems, and machine learning deployment, with a current focus on product strategy, roadmap planning, and cross-functional teamwork. Engineering experience is leveraged to drive product decisions, optimize workflows, and ensure measurable business impact.</p>
+                <p>For details on technical projects, see the <a href="projects">Projects</a> page. For research and publications, visit the <a href="publications">Publications</a> page.</p>
+            </div>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2023 Alireza Belal. All rights reserved.</p>
+    </footer>
     <script src="assets_custom/js/fontawesome-all.min.js"></script>
 </body>
 </html>
