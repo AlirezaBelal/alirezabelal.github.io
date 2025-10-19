@@ -6,13 +6,16 @@ body {
     padding: 0;
 }
 
-.profile {
+.container {
     max-width: 1100px;
     margin: 40px auto;
     padding: 2em;
     background: transparent;
     box-shadow: none;
     border-radius: 0;
+}
+
+.two-column {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -43,6 +46,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .subtitle {
@@ -111,9 +119,9 @@ footer {
     font-size: 0.95em;
 }
 
-/* Responsive */
+/* 🔹 ریسپانسیو */
 @media (max-width: 900px) {
-    .profile {
+    .two-column {
         flex-direction: column;
         align-items: center;
     }
@@ -123,7 +131,7 @@ footer {
         padding: 0;
     }
 
-    .profile {
+    .container {
         margin: 20px;
         padding: 1.5em;
     }
